@@ -101,5 +101,6 @@ Notes :
 * Améliorer le code (je ne suis pas dev et ça se voit sur le côté "foutraque").
 * Automatiser le script avec génération des graphiques uniquement pour les règles ayant changées.
 * Notification des admins quand génération des graphiques.
+* Insérer le VLAN de destination devant un hôte de destination.
 * Faire la même chose avec OPNSense.
 * Envoyez les preuves dans [CISO Assistant](https://intuitem.com/fr/ciso-assistant/).
