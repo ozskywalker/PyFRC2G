@@ -93,11 +93,27 @@ PORT_MAP = {
 
 ## 🚀 Utilisation
 
-Lancez le script **pyfrc2g.py**. Le script génèrera alors un fichier CSV qui sera parsé dans la foulée afin de générer un fichier *.gv* par interface présente sur pfSense puis de générer un rendu au format PNG. Ces fichiers sont nommés avec le nom de la passerelle et l'interface dans le répertoire **graphs**.
+1. Utilisation de base
 
-Notes :
+Lancez le script **pyfrc2g.py**. Le script génèrera alors un fichier final PDF. Chaque page est nommée avec le nom de la passerelle et l'interface dans le répertoire fin de faciliter la navigation dans le fichier.
+Si aucune règle n'a été ajoutée ou modifiée, le script ne regénère pas de fichier PDF.
+
+2. Utilisation avec CISO Assistant
+
+Récupérez les fichiers **pyfrc2g-ciso_assist.py** et **config.py** correspondant à votre passerelle (pfSense ou OPNSense).
+
+Configurez les paramètres d'accès à votre passerelle comme vu plus haut puis renseignez la partie CISO Assistant :
+```python
+# CISO Assistant
+CISO_URL = "https://<CISO_ASSISTANT_ADDRESS>"
+CISO_TOKEN = "<CISO_ASSISTANT_TOKEN>"
+CISO_EVIDENCE = f"{CISO_URL}/api/evidences/<EVIDENCE_ID>/upload/"
+```
+
+3. Remarques
 * Lors de la récupération des hôtes de destination, l'API de pfSense ne permet pas de connaitre le réseau dans lequel se situe celui-ci. J'ai donc commenté mes hôtes de destination sur pfSense en renseignant dans quel VLAN était celui-ci.
 * Pour les hôtes de destination se situant en dehors de mon infrastructure interne, j'ai renseigné dans pfSense *EXT_* devant chaque nom d'alias de ces hôtes.
+* OPNSense expose à travers son API les règles de manière complètement différente de celle de pfSense. À ce jour je n'ai pas trouvé comment récupérer les règles désactivées. Les règles flottantes auto-générée ne sont également pas simples à récupérer.
 
 ## 📝 Todo
 * Améliorer le code (je ne suis pas dev et ça se voit sur le côté bordélique).
@@ -105,4 +121,4 @@ Notes :
 * Notification des admins quand génération des graphiques.
 * Insérer le VLAN de destination devant un hôte de destination.
 * ~~Faire la même chose avec OPNSense~~.
-* ~~Envoyez les preuves dans [CISO Assistant](https://intuitem.com/fr/ciso-assistant/)~~.
+* (en cours) Envoyez les preuves dans [CISO Assistant](https://intuitem.com/fr/ciso-assistant/).
