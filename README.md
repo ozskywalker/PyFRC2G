@@ -49,7 +49,7 @@ PFS_URL = "https://pfs01.domaine.lan/api/v2/firewall/rules"
 PFS_TOKEN = "VOTRE_CLE_GENEREE_AVEC_PFSENSE_REST_API"
 PASSERELLE = "PFS01"
 ```
-Pour OPNSense vous devez également renseigner le nom des interfaces car l'API ne permet de récupérer les règles qu'interface par interfac (elles sont visibles sur *Interfaces > Assignations*)
+Pour OPNSense vous devez également renseigner le nom des interfaces car l'API ne permet de récupérer les règles qu'interface par interface (elles sont visibles sur *Interfaces > Assignations*)
 
 Exemple avec OPNSense :
 ```python
@@ -104,5 +104,5 @@ Notes :
 * Automatiser le script avec génération des graphiques uniquement pour les règles ayant changées.
 * Notification des admins quand génération des graphiques.
 * Insérer le VLAN de destination devant un hôte de destination.
-* Faire la même chose avec OPNSense.
-* Envoyez les preuves dans [CISO Assistant](https://intuitem.com/fr/ciso-assistant/).
+* ~~Faire la même chose avec OPNSense~~.
+* ~~Envoyez les preuves dans [CISO Assistant](https://intuitem.com/fr/ciso-assistant/)~~.
