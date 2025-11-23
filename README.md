@@ -21,7 +21,7 @@ Le script a été codé pour répondre à deux objectifs :
 * Distinction entre un VLAN/réseau de destination et un hôte de destination.
 * Mapping des interfaces, des ports et des destnations.
 * Coloration pour les actions PASS et BLOCK.
-* Coloration pour les règles présentes mais désactivées.
+* Coloration pour les règles présentes mais désactivées (pfSense uniquement).
 * Export possible du fichier PDF généré dans la preuve associée sur **[CISO Assistant](https://intuitem.com/fr/ciso-assistant/)** sous forme de révision afin de conserver l'historique des fichiers poussés.
 
 ## 💾 Installation
