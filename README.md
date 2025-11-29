@@ -130,7 +130,7 @@ NET_MAP = {
 
 Lancez le script **pyfrc2g.py**. Le script génèrera alors un fichier final PDF (après être passé par plusieurs fichiers intermédiaires qui sont supprimés une fois l'exécution du script terminée). Chaque page est nommée avec le nom de la passerelle et l'interface dans le répertoire fin de faciliter la navigation dans le fichier.
 
-Si aucune règle n'a été ajoutée ou modifiée, le script ne regénère pas de fichier PDF (le script s'appuie sur comparaison de la somme md5sum entre la version précédent du CSV générée et la version en cours).
+Si aucune règle n'a été ajoutée ou modifiée, le script ne regénère pas de fichier PDF (le script s'appuie sur comparaison de la somme md5sum entre la version précédent du CSV générée et la version en cours). Vous pouvez réinitialiser le fichier `md5sum.txt` avec la commande `echo > md5sum.txt`.
 
 2. Utilisation avec CISO Assistant
 
