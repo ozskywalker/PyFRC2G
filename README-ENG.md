@@ -23,7 +23,7 @@ This script was written to meet two objectives:
 * Mapping of interfaces, ports, and destinations.
 * Color coding for PASS and BLOCK actions.
 * Color coding for rules that exist but are disabled (pfSense only).
-* Option to export the generated PDF to the associated evidence record in CISO Assistant as a revision to keep the history of uploaded files.
+* Option to export the generated PDF to the associated evidence record in [CISO Assistant](https://intuitem.com/ciso-assistant/) as a revision to keep the history of uploaded files.
 
 ## 💾 Installation
 
