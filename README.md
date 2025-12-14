@@ -137,7 +137,9 @@ If you want to automatically upload generated PDFs to CISO Assistant as evidence
 # CISO Assistant Configuration
 CISO_URL = "https://ciso-assistant.example.com"
 CISO_TOKEN = "YOUR_CISO_ASSISTANT_API_TOKEN"
-CISO_EVIDENCE_ID = "123"  # Evidence ID from CISO Assistant
+CISO_EVIDENCE_PATH = f"{CISO_URL}/api/evidence-revisions/"
+CISO_FORLDER_ID = "<CISO_FOLDER_ID>" # Domain ID from CISO Assistant to which the evidence is linked.
+CISO_EVIDENCE_ID = "<CISO_EVIDENCE_ID> # Evidence ID from CISO Assistant
 ```
 
 **Note:** Leave these as default values (`<CISO_ASSISTANT_ADDRESS>`, etc.) to disable CISO Assistant integration.
