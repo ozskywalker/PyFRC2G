@@ -71,7 +71,7 @@ PyFRC2G was designed to meet two main objectives:
 ```bash
 # Clone the repository
 git clone https://github.com/olivierb46/PyFRC2G.git
-cd PyFRC2G-main
+cd PyFRC2G
 
 # Install setuptools (required by setup.py)
 pip install setuptools
