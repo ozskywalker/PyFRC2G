@@ -97,7 +97,7 @@ python pyfrc2g.py
 
 ### 1. Edit Configuration File
 
-Edit `pyfrc2g/config.py` to configure your gateway:
+Edit `pyfrc2g/modules/config.py` to configure your gateway:
 
 #### For pfSense:
 
@@ -207,7 +207,7 @@ graph_generator.generate_graphs(csv_path, output_dir)
 
 ### Generated Files
 
-The script generates files in `tmp/graphs_<GATEWAY_NAME>/`:
+The script generates files in `results/graphs_<GATEWAY_NAME>/`:
 
 #### Global Files:
 - `<GATEWAY_NAME>_FLOW_MATRIX.pdf` - PDF with all interfaces (one page per interface)
